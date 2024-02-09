@@ -1,7 +1,0 @@
-#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-#NoTrayIcon
-
-::td::
-     SendInput, %A_yyyy%-%A_MM%-%A_dd%
-return
