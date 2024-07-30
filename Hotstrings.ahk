@@ -5,8 +5,10 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 ::closegreet::If there is anything else you need or if you have any questions, just let us know and we’d be happy to help.
 
 ::eshruggie::¯\\\_(ツ)\_/¯
-
+::lennyface::( ͡° ͜ʖ ͡°)
 ::shruggie::¯\_(ツ)_/¯
+
+::kpw::Kudu2024!
 
 ::td::
      SendInput, %A_yyyy%-%A_MM%-%A_dd%
