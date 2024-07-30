@@ -8,8 +8,6 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 ::lennyface::( ͡° ͜ʖ ͡°)
 ::shruggie::¯\_(ツ)_/¯
 
-::kpw::Kudu2024!
-
 ::td::
      SendInput, %A_yyyy%-%A_MM%-%A_dd%
 return
