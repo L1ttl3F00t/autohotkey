@@ -1,0 +1,4 @@
+[Autorun]
+open=install.bat
+icon=resources\favicon.ico
+label=AUTOHOTKEY
