@@ -12,6 +12,9 @@ if exist "%ahkPath%" (
     REM Install AutoHotkey silently if not installed
     call .\AutoHotkey_1.1.37.01_setup.exe /S
     echo AutoHotkey has been installed.
+    
+    REM Wait for the installation to complete before proceeding
+    timeout /t 10 /nobreak >nul
 )
 
 REM Check if the script already exists in the Startup folder
@@ -29,10 +32,14 @@ if exist "%scriptPath%" (
 
     REM Download Master Script using curl
     curl -o AHK-master-script.ahk -L "https://raw.githubusercontent.com/L1ttl3F00t/autohotkey/master/AHK-master-script.ahk"
+    echo Downloaded AHK-master-script.ahk.
 
     REM Copy AHK-master-script.ahk to the Startup folder
     copy AHK-master-script.ahk "%scriptPath%"
     echo AutoHotkey master script has been set up in the Startup folder.
+    
+    REM Wait briefly before running the script
+    timeout /t 5 /nobreak >nul
 
     REM Run AutoHotkey script
     start /MIN "" "%ahkPath%" "%scriptPath%"
