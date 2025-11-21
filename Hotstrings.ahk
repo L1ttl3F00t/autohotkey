@@ -8,7 +8,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 ::saletick::I’ve opened ticket #XXXXXX to process this addition to your account.
 
 ::darv::DaVinci Resolve
-::convgif::ffmpeg -i input.mp4 -loop 0 -filter_complex "[0:v]fps=30,split[a][b]; [a]palettegen=stats_mode=diff[palette]; [b][palette]paletteuse=dither=bayer:bayer_scale=5" final.gif
+::convgif::ffmpeg -i input.mp4 -loop 0 -filter_complex "[0:v]fps=30,split[a][b]; [a]palettegen=stats_mode=diff[palette]; [b][palette]paletteuse=dither=bayer:bayer_scale=5" output.gif
 
 ::eshruggie::¯\\\_(ツ)\_/¯
 ::shruggie::¯\_(ツ)_/¯
